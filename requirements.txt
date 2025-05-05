@@ -1,0 +1,23 @@
+# Main libraries
+numpy==2.0.3
+pandas==2.2.2
+seaborn==0.13.2
+spacy==3.8.0
+
+# Transformers and PyTorch
+torch==2.4.1
+transformers==4.45.2
+torchcrf==1.1.0       # CRF layer for PyTorch (used in BERT+CRF model)
+tqdm==4.66.5         
+
+# Datasets and evaluation metrics
+datasets==3.5.1       
+scikit-learn==1.4.1.post1 
+
+# Visualization and display
+IPython==8.26.0
+matplotlib==3.8.3
+networkx==3.2.1
+
+# spaCy English language model (small)
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

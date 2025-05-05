@@ -1,0 +1,58 @@
+# Named Entity Recognition for Knowledge Graph Construction  
+
+## Overview  
+This project focuses on **Named Entity Recognition (NER)** for constructing **Knowledge Graphs (KGs)** from unstructured text. It uses the **CoNLL04** dataset, which contains news articles annotated with entities (PER, LOC, ORG, MISC) and relationships (Work_For, Located_In, etc.). Two approaches are implemented:  
+
+1. **Classical CRF Method**: A Conditional Random Fields model with handcrafted features for sequence labeling.  
+2. **LLM-Based Method (BERT+CRF)**: A hybrid approach combining BERT embeddings with CRF.  
+
+The goal is to extract entities and relationships to build structured knowledge graphs.  
+
+---
+
+## Requirements 
+
+To install dependencies, run
+```bash  
+pip install -r requirements.txt  
+```  
+
+---
+## Running Experiments 
+
+   * Run BERT+CRF
+   
+   ```bash  
+   python main.py  
+   ```  
+   Results will be saved to `results.log`.  
+
+   * Run BERT+CRF 
+   ```bash  
+   python ...  
+   ```  
++ about Knowledge Graph Visualization
+---
+
+## Experimental Results  
+ 
+
+#### CRF Model  
+| Metric             | Value     |  
+|--------------------|-----------|  
+| **Micro-F1**       | 93.28%    |  
+| **Macro-F1**       | 79.90%    |  
+| **Weighted avg**   | 93.16%    | 
+
+
+
+#### BERT+CRF Model 
+
+!PRELIMINARY!
+
+| Metric             | Value     |  
+|--------------------|-----------|  
+| **Micro-F1**       | 94.98%    |  
+| **Macro-F1**       | 86.41%    |  
+| **Weighted avg**   | 95.01%    |  
+
