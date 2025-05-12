@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ---
 ## Running Experiments 
 
-   * Run BERT+CRF
+   * Run CRF
    
    ```bash  
    python main.py  
@@ -37,22 +37,9 @@ pip install -r requirements.txt
 ## Experimental Results  
  
 
-#### CRF Model  
-| Metric             | Value     |  
-|--------------------|-----------|  
-| **Micro-F1**       | 93.28%    |  
-| **Macro-F1**       | 79.90%    |  
-| **Weighted avg**   | 93.16%    | 
-
-
-
-#### BERT+CRF Model 
-
-!PRELIMINARY!
-
-| Metric             | Value     |  
-|--------------------|-----------|  
-| **Micro-F1**       | 94.98%    |  
-| **Macro-F1**       | 86.41%    |  
-| **Weighted avg**   | 95.01%    |  
+| METRIC           | CRF MODEL | BERT+CRF MODEL | IMPROVEMENT |
+|------------------|-----------|----------------|-------------|
+| Micro-F1         | 93.28%    | 95.26%         | +2.1%       |
+| Macro-F1         | 79.90%    | 86.99%         | +8.9%       |
+| Weighted avg     | 93.16%    | 95.25%         | +2.2%       |
 
