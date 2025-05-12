@@ -31,11 +31,10 @@ pip install -r requirements.txt
    ```bash  
    python ...  
    ```  
-+ about Knowledge Graph Visualization
 ---
 
 ## Experimental Results  
- 
+ Evaluation was performed using standard metrics: Micro-F1, Macro-F1, and Weighted-Average F1. The BERT+CRF model outperformed the classical CRF in all metrics, achieving 95.26% Micro-F1 and 86.99% Macro-F1 , compared to 93.28% and 79.90% respectively for CRF. This indicates better performance across all entity types, especially rare and ambiguous ones. 
 
 | METRIC           | CRF MODEL | BERT+CRF MODEL | IMPROVEMENT |
 |------------------|-----------|----------------|-------------|
