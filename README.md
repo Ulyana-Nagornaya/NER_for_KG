@@ -8,8 +8,8 @@ This project focuses on **Named Entity Recognition (NER)** for constructing **Kn
 
 The goal is to extract entities and relationships to build structured knowledge graphs.  
 
-![A knowledge graph constructing using CRF model for NER](<figures/crf.png>)
-![A knowledge graph constructing using BERT+CRF model for NER](<figures/bert-crf.png>)
+![A knowledge graph constructing using CRF model for NER](<figures/crf_kg.png>)
+![A knowledge graph constructing using BERT+CRF model for NER](<figures/bert-crf_kg.png>)
 
 ---
 
@@ -46,5 +46,8 @@ To install dependencies, run
 | Macro-F1         | 79.90%    | 86.99%         | +8.9%       |
 | Weighted avg     | 93.16%    | 95.25%         | +2.2%       |
 
+### Confusion matrix for CRF model
 ![Confusion matrix for CRF model](figures/crf_matrix.png)
+
+### Confusion matrix for BERT+CRF model
 ![Confusion matrix for BERT+CRF model](figures/bert-crf_matrix.png)
