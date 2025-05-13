@@ -8,13 +8,17 @@ This project focuses on **Named Entity Recognition (NER)** for constructing **Kn
 
 The goal is to extract entities and relationships to build structured knowledge graphs.  
 
+![A knowledge graph constructing using CRF model for NER](<figures/crf.png>)
+![A knowledge graph constructing using BERT+CRF model for NER](<figures/bert-crf.png>)
+
 ---
 
 ## Requirements 
 
 To install dependencies, run
 ```bash  
-pip install -r requirements.txt  
+!pip install -q -r requirements.txt
+!python -m spacy download en_core_web_sm 
 ```  
 
 ---
@@ -23,13 +27,13 @@ pip install -r requirements.txt
    * Run CRF
    
    ```bash  
-   python main.py  
+   python main.py --crf
    ```  
    Results will be saved to `results.log`.  
 
    * Run BERT+CRF 
    ```bash  
-   python ...  
+   python main.py --bert-crf 
    ```  
 ---
 
@@ -42,3 +46,5 @@ pip install -r requirements.txt
 | Macro-F1         | 79.90%    | 86.99%         | +8.9%       |
 | Weighted avg     | 93.16%    | 95.25%         | +2.2%       |
 
+![Confusion matrix for CRF model](figures/crf_matrix.png)
+![Confusion matrix for BERT+CRF model](figures/bert-crf_matrix.png)
