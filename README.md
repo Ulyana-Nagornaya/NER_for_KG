@@ -8,7 +8,14 @@ This project focuses on **Named Entity Recognition (NER)** for constructing **Kn
 
 The goal is to extract entities and relationships to build structured knowledge graphs.  
 
+<div style="text-align: center;">
+### A knowledge graph constructing using CRF model for NER
+</div>
 ![A knowledge graph constructing using CRF model for NER](<figures/crf_kg.png>)
+
+<div style="text-align: center;">
+### A knowledge graph constructing using BERT+CRF model for NER
+</div>
 ![A knowledge graph constructing using BERT+CRF model for NER](<figures/bert-crf_kg.png>)
 
 ---
